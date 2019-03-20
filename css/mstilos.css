@@ -1,0 +1,49 @@
+*{
+  margin-top: 4px;
+margin-right: 1px;
+margin-bottom: 1px;
+margin-left: 1px;
+}
+
+body{
+    background: rgb(255, 255, 255);
+}
+#menu ul li {
+    background-color:#1a1919;
+}
+
+#menu ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+/* Sortable tables */
+table.sortable thead {
+  background-color:#eee;
+  color:#666666;
+  font-weight: bold;
+  cursor: default;
+}
+
+table.sortable th::after, th.sorttable_sorted::after, th.sorttable_sorted_reverse::after {
+  content: " ";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+}
+th.sorttable_sorted::after {
+  background: url(my-sorted-icon.png);
+  background-size: contain;
+}
+th.sorttable_sorted_reverse::after {
+  background: url(my-sorted-reversed-icon.png);
+  background-size: cover;
+}
+
+table.sortable tbody tr:nth-child(2n) td {
+  background: rgb(245, 170, 195);
+}
+table.sortable tbody tr:nth-child(2n+1) td {
+  background: white;
+}
